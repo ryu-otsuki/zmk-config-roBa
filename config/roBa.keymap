@@ -62,6 +62,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        ss_region_cmd_shift_4: ss_region_cmd_shift_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
+            label = "SS_REGION_CMD_SHIFT_4";
+        };
     };
 
     behaviors {
@@ -80,10 +87,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                        &kp T                                                                  &kp Y        &kp U                &lt 5 I    &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F                        &kp G        &trans                                     &kp MINUS      &kp H        &mt RIGHT_COMMAND J  &kp K      &kp L    &kp SINGLE_QUOTE
-&kp Z      &kp X         &kp C         &kp V                        &kp B        &kp COLON                                  &kp SEMICOLON  &kp N        &kp M                &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_KATAKANAHIRAGANA      &kp BACKSPACE  &lt 2 ENTER                                           &kp DEL
+&kp Q      &kp W         &kp E         &kp R                        &kp T                                                                     &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F                        &kp G        &trans                                     &kp MINUS         &kp H        &kp J  &kp K      &kp L    &kp SINGLE_QUOTE
+&kp Z      &kp X         &kp C         &kp V                        &kp B        &kp COLON                                  &kp SEMICOLON     &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_KATAKANAHIRAGANA      &mt F3 BACKSPACE  &lt 2 ENTER                             &kp DEL
             >;
         };
 
