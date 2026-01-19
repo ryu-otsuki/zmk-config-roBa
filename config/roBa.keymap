@@ -77,13 +77,6 @@
             label = "BACK";
         };
 
-        forward: forward {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp RIGHT_BRACKET>;
-            label = "FORWARD";
-        };
-
         alfred: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -91,11 +84,11 @@
             label = "NEW_MACRO";
         };
 
-        aqua_voice: new_macro {
+        forward: forward {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_COMMAND &kp F3>;
-            label = "NEW_MACRO";
+            bindings = <&kp LEFT_COMMAND &kp RIGHT_BRACKET>;
+            label = "FORWARD";
         };
     };
 
