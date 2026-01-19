@@ -124,10 +124,10 @@
 
         FUNCTION {
             bindings = <
-&trans       &trans                  &trans  &aqua_voice  &trans                       &kp F1  &kp F2  &forward  &kp F4  &kp F5
-&trans       &ss_region_cmd_shift_4  &trans  &alfred      &trans  &trans      &kp F13  &kp F6  &back   &kp F8    &kp F9  &kp F10
-&trans       &trans                  &trans  &trans       &trans  &trans      &trans   &trans  &trans  &trans    &trans  &kp F11
-&key_repeat  &trans                  &trans  &trans       &trans  &trans      &trans   &trans                            &kp F12
+&trans  &trans                  &trans  &aqua_voice  &trans                       &kp F1  &kp F2  &forward  &kp F4  &kp F5
+&trans  &ss_region_cmd_shift_4  &trans  &alfred      &trans  &trans      &kp F13  &kp F6  &back   &kp F8    &kp F9  &kp F10
+&trans  &trans                  &trans  &trans       &trans  &trans      &trans   &trans  &trans  &trans    &trans  &kp F11
+&trans  &trans                  &trans  &trans       &trans  &trans      &trans   &trans                            &kp F12
             >;
         };
 
