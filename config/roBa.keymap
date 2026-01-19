@@ -90,6 +90,13 @@
             bindings = <&kp LEFT_COMMAND &kp RIGHT_BRACKET>;
             label = "FORWARD";
         };
+
+        aqua_voice: aqua_voice {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "AQUA_VOICE";
+        };
     };
 
     behaviors {
