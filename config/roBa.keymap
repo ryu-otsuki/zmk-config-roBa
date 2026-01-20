@@ -62,48 +62,6 @@
             bindings = <&to 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
-
-        ss_region_cmd_shift_4: ss_region_cmd_shift_4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
-
-            label = "SS_REGION_CMD_SHIFT_4";
-        };
-
-        back: back {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_COMMAND &kp LEFT_BRACKET>;
-
-            label = "BACK";
-        };
-
-        forward: forward {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_COMMAND &kp RIGHT_BRACKET>;
-
-            label = "FORWARD";
-        };
-
-        desktop_left: desktop_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_CONTROL &kp LEFT_ARROW>;
-
-            label = "DESKTOP_LEFT";
-        };
-
-        desktop_right: desktop_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_CONTROL &kp RIGHT>;
-
-            label = "DESKTOP_RIGHT";
-        };
     };
 
     behaviors {
@@ -122,19 +80,19 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                       &kp T                                                                  &kp Y                   &kp U     &lt 5 I    &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F                       &kp G                   &trans                      &kp MINUS          &kp H                   &mt F3 J  &kp K      &kp L    &kp SINGLE_QUOTE
-&kp Z      &kp X         &kp C         &kp V                       &kp B                   &kp COLON                   &kp SEMICOLON      &kp N                   &kp M     &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 LG(LANG5)  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 3 LANG4      &kp LS(BACKSPACE)  &lt_to_layer_0 1 ENTER                                &kp DEL
+&kp Q      &kp W         &kp E         &kp R          &kp T                                                                          &kp Y                   &kp U     &lt 5 I    &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F          &kp G                   &trans                              &kp MINUS          &kp H                   &mt F3 J  &kp K      &kp L    &kp SINGLE_QUOTE
+&kp Z      &kp X         &kp C         &kp V          &kp B                   &kp COLON                           &kp SEMICOLON      &kp N                   &kp M     &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LC(SPACE)  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 3 LANG_HIRAGANA      &kp LS(BACKSPACE)  &lt_to_layer_0 1 ENTER                                &kp DEL
             >;
         };
 
         FUNCTION {
             bindings = <
-&trans  &trans                  &trans         &trans          &trans                       &kp F1  &kp F2      &forward  &kp F4  &kp F5
-&trans  &ss_region_cmd_shift_4  &desktop_left  &desktop_right  &trans  &trans      &kp F13  &kp F6  &back       &kp F8    &kp F9  &kp F10
-&trans  &trans                  &trans         &trans          &trans  &trans      &trans   &trans  &kp C_MUTE  &trans    &trans  &kp F11
-&trans  &trans                  &trans         &trans          &trans  &trans      &trans   &trans                                &kp F12
+&trans  &trans                &trans        &trans         &trans                       &kp F1  &kp F2              &kp LA(RIGHT)  &kp F4  &kp F5
+&trans  &kp LG(LS(NUMBER_4))  &kp LC(LEFT)  &kp LC(RIGHT)  &trans  &trans      &kp F13  &kp F6  &kp LA(LEFT_ARROW)  &kp F8         &kp F9  &kp F10
+&trans  &trans                &trans        &trans         &trans  &trans      &trans   &trans  &kp C_MUTE          &trans         &trans  &kp F11
+&trans  &trans                &trans        &trans         &trans  &trans      &trans   &trans                                             &kp F12
             >;
         };
 
