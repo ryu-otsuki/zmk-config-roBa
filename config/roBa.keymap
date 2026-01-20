@@ -81,7 +81,7 @@
         default_layer {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R          &kp T                                                                          &kp Y                   &kp U  &lt 5 I    &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F          &kp G                   &trans                              &kp MINUS          &kp H                   &kp J  &kp K      &kp L    &kp SINGLE_QUOTE
+&kp A      &kp S         &kp D         &kp F          &kp G                   &trans                              &kp MINUS          &kp H                   &kp J  &kp K      &kp L    &mt LA(V) SINGLE_QUOTE
 &kp Z      &kp X         &kp C         &kp V          &kp B                   &kp COLON                           &kp SEMICOLON      &kp N                   &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LC(SPACE)  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 3 LANG_HIRAGANA      &kp LS(BACKSPACE)  &lt_to_layer_0 1 ENTER                             &kp DEL
             >;
@@ -89,10 +89,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans                &trans        &trans         &trans                       &kp F1  &kp F2       &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)  &kp F5
-&trans  &kp LG(LS(NUMBER_4))  &kp LC(LEFT)  &kp LC(RIGHT)  &trans  &trans      &kp F13  &kp F6  &mt LA(V) A  &kp F8                &kp F9                 &kp F10
-&trans  &trans                &trans        &trans         &trans  &trans      &trans   &trans  &kp C_MUTE   &trans                &trans                 &kp F11
-&trans  &trans                &trans        &trans         &trans  &trans      &trans   &trans                                                            &kp F12
+&trans  &trans                &trans        &trans         &trans                       &kp F1  &kp F2      &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)  &kp F5
+&trans  &kp LG(LS(NUMBER_4))  &kp LC(LEFT)  &kp LC(RIGHT)  &trans  &trans      &kp F13  &kp F6  &kp F7      &kp F8                &kp F9                 &kp F10
+&trans  &trans                &trans        &trans         &trans  &trans      &trans   &trans  &kp C_MUTE  &trans                &trans                 &kp F11
+&trans  &trans                &trans        &trans         &trans  &trans      &trans   &trans                                                           &kp F12
             >;
         };
 
